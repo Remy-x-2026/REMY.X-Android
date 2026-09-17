@@ -1,0 +1,31 @@
+PASO A PASO — CREAR LA APK SIN ANDROID STUDIO
+
+1. Crea un repositorio NUEVO para Android, separado del repositorio de Windows.
+   Recomendado: REMY.X-Android
+
+2. Descomprime este ZIP.
+
+3. Abre la carpeta en VS Code.
+
+4. Sube todo el contenido de la carpeta al repositorio REMY.X-Android.
+   Importante: conserva .github/workflows/build-apk.yml.
+
+5. En GitHub abre la pestaña Actions.
+
+6. Selecciona "Build REMY.X Android APK".
+
+7. Pulsa "Run workflow".
+
+8. Espera a que termine el proceso.
+
+9. En la ejecución terminada, abre "Artifacts".
+
+10. Descarga "REMY.X-Android-debug".
+    Dentro estará app-debug.apk.
+
+11. Pasa la APK al teléfono Android e instálala para probarla.
+
+NOTA:
+- Android Studio NO es necesario para esta ruta de compilación en GitHub Actions.
+- Para una APK de producción firmada se necesitará una clave de firma propia; NO se debe subir esa clave al repositorio.
+- Esta V3 es una base de desarrollo. No la consideres todavía una versión final para publicar.

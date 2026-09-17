@@ -1,0 +1,7 @@
+REMY.X Android no tiene pantalla de inicio de sesión.
+No solicita usuario/contraseña de redes sociales.
+No guarda credenciales.
+No intenta capturar cookies por defecto.
+
+IMPORTANTE:
+Algunos sitios permiten acceder a contenidos solo con autenticación. REMY.X no debe pedir las credenciales del usuario ni intentar saltarse controles de acceso. Para esos casos, la descarga puede fallar y debe mostrarse un error claro.
