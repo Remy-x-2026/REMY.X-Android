@@ -12,7 +12,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     defaults:
       run:
         working-directory: REMY.X-Android-V3
@@ -29,15 +28,14 @@ jobs:
 
       - name: Configurar Android SDK
         uses: android-actions/setup-android@v4
-        with:
-          packages: ''
 
-      - name: Instalar SDK Android requerido
+      - name: Instalar SDK requerido
         shell: bash
         run: |
+          yes | sdkmanager --licenses >/dev/null || true
           sdkmanager "platform-tools" "platforms;android-35" "build-tools;34.0.0"
 
-      - name: Configurar Gradle 8.9
+      - name: Configurar Gradle
         uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '8.9'
