@@ -57,7 +57,7 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
 
-    // Free Android embedding of yt-dlp via Python/Chaquopy.
+    // Motor Android basado en yt-dlp + runtime Python.
     implementation("dev.ffmpegkit-maintained:yt-dlp-android:2.0.2")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
